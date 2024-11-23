@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="desktop">
+        <div class="desktop-icon" id="notepad-icon" onclick="openWindow('notepad')">
+            <img src="notepad.png" alt="Notepad">
+            <span>Notepad</span>
+        </div>
+        <div class="desktop-icon" id="calculator-icon" onclick="openWindow('calculator')">
+            <img src="calculator.png" alt="Calculator">
+            <span>Calculator</span>
+        </div>
+        <div class="desktop-icon" id="recycle-bin-icon" onclick="openRecycleBin()">
+            <img src="Recycle_bin.webp" alt="Recycle Bin">
+            <span>Recycle Bin</span>
+        </div>
+    </div>
+
+    <div id="taskbar">
+        <div id="start-button">
+        <img src="startmenu1.png" alt="Windows Logo" class="windows-icon">
+    </div></div>
+
+    <div id="windows-container"></div>
+    <div id="recycle-bin-container" class="hidden">
+        <h3>Recycle Bin</h3>
+        <div id="recycle-bin-items"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
